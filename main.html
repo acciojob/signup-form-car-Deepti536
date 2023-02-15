@@ -10,7 +10,41 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<form>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" class="email-input" placeholder="Email" >
+    <span class="invalid-email">Inavlid Email</span>
+  </div>
+  <div>
+    <label for="password">Email</label>
+    <input class="password-input" type="password" placeholder="Password"  required>
+    <span class="invalid-password">Password required</span>
+  </div>
+</form>
 
+<!-- 
+ 
+  Signup form 
+
+  email(email)
+    Invalid
+  password 
+ 
+
+-->
+span {
+  color: red ;
+  display: none ;
+}
+
+.email-input:invalid + span {
+  display: block ;
+}
+
+.password-input:invalid + span {
+    display: block ;
+}
 </body>
 
 </html>
